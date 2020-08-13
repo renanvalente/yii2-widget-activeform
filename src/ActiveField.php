@@ -799,7 +799,6 @@ class ActiveField extends YiiActiveField
     public function textInput($options = [])
     {
         $this->initFieldOptions($options);
-        Html::addCssClass($options, $this->addClass);
         $this->initDisability($options);
         return parent::textInput($options);
     }
@@ -811,7 +810,6 @@ class ActiveField extends YiiActiveField
     public function textarea($options = [])
     {
         $this->initFieldOptions($options);
-        Html::addCssClass($options, $this->addClass);
         $this->initDisability($options);
         return parent::textarea($options);
     }
